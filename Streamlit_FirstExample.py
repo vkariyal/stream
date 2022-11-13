@@ -1,7 +1,9 @@
 # streamlit_app.py
 
 import streamlit as st
-import snowflake.connector
+import snowflake as sf
+from snowflake import connector
+# import snowflake.connector
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
