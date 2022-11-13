@@ -9,7 +9,7 @@ from snowflake import connector
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
 def init_connection():
-    return snowflake.connector.connect(
+    return sf.connector.connect(
         **st.secrets["snowflake"], client_session_keep_alive=True
     )
 
